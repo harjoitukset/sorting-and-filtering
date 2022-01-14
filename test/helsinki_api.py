@@ -26,7 +26,7 @@ def get_start_time(event):
 
 
 def get_name(event):
-    return (event['name']['fi'] or event['name']['en'] or '').strip()
+    return (event['name']['fi'] or event['name']['en'] or event['name']['sv'] or event['name']['zh']).strip()
 
 
 def filter_events_by_days(events, min_days, max_days):

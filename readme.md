@@ -14,7 +14,7 @@ Aineistona käytämme [MyHelsinki Open API](https://open-api.myhelsinki.fi/) -RE
 
 Kun olet hyväksynyt tehtävän GitHub classroomissa ja saanut repositoriosta henkilökohtaisen kopion, kloonaa se itsellesi `git clone` -komennolla. Siirry sen jälkeen VS Codeen editoimaan tiedostoja.
 
-Kloonatessasi repositoriota varmista, että Git-osoitteen lopussa on oma GitHub-käyttäjänimesi. Jos käyttäjänimesi puuttuu osoitteesta, kyseessä ei ole henkilökohtainen kopiosi tehtävästä. Luo tässä tapauksessa oma repositorio tämän linkin kautta: TODO.
+Kloonatessasi repositoriota varmista, että Git-osoitteen lopussa on oma GitHub-käyttäjänimesi. Jos käyttäjänimesi puuttuu osoitteesta, kyseessä ei ole henkilökohtainen kopiosi tehtävästä. Luo tässä tapauksessa oma repositorio tämän linkin kautta: [https://classroom.github.com/a/hILfDCgY](https://classroom.github.com/a/hILfDCgY).
 
 
 ## Vastausten lähettäminen
@@ -110,6 +110,7 @@ Kun vertailtavat ajankohdat ovat merkkijonomuodossa, niitä voidaan vertailla ta
 
 Ohjelmasi tulee tehdä tarvittavat vertailut ja tulostaa kaikkien sellaisten tapahtumien nimet, joiden alkamisaika on seuraavien 30 vuorokauden aikana.
 
+Skriptisi ei saa pyytää käyttäjältä lainkaan syötteitä, ja sen tulee olla normaalisti suoritettavissa komennolla `python3 upcoming_events.py`, olettaen että järjestelmässä löytyy `python3`-komento.
 
 
 ## Osa 2: tapahtumien lajittelu (3 pistettä)
@@ -128,7 +129,7 @@ Voit valita toteutettavan järjestämisalgoritmin esimerkiksi seuraavista:
 
 [https://en.wikipedia.org/wiki/Insertion_sort](https://en.wikipedia.org/wiki/Insertion_sort)
 
-<a title="Simpsons contributor / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Insertion_sort.gif"><img width="128" alt="Insertion sort" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif"></a>
+<a title="Simpsons contributor / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Insertion_sort.gif"><img height="256" alt="Insertion sort" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif"></a>
 
 Kuva: By Simpsons contributor - Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=17512147](https://commons.wikimedia.org/w/index.php?curid=17512147)
 
@@ -136,7 +137,7 @@ Kuva: By Simpsons contributor - Own work, CC BY-SA 3.0, [https://commons.wikimed
 
 [https://en.wikipedia.org/wiki/Merge_sort](https://en.wikipedia.org/wiki/Merge_sort)
 
-<a title="Swfung8 / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Merge-sort-example-300px.gif"><img width="256" alt="Merge-sort-example-300px" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" style="max-width: 250px; max-height: 250px;"></a>
+<a title="Swfung8 / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Merge-sort-example-300px.gif"><img width="256" alt="Merge-sort-example-300px" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" style="border solid silver 1px;"></a>
 
 Kuva: By Swfung8 - Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=14961648](https://commons.wikimedia.org/w/index.php?curid=14961648)
 
@@ -144,7 +145,7 @@ Kuva: By Swfung8 - Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/inde
 
 [https://en.wikipedia.org/wiki/Bubble_sort](https://en.wikipedia.org/wiki/Bubble_sort)
 
-<a href="https://commons.wikimedia.org/wiki/File:Bubble-sort-example-300px.gif#/media/File:Bubble-sort-example-300px.gif" title="By Swfung8 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=14953478"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="Bubble-sort-example-300px.gif" style="max-width: 250px; max-height: 250px;"></a>
+<a href="https://commons.wikimedia.org/wiki/File:Bubble-sort-example-300px.gif#/media/File:Bubble-sort-example-300px.gif" title="By Swfung8 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=14953478"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="Bubble-sort-example-300px.gif" width="256" style="border solid silver 1px;"></a>
 
 Kuva: By Swfung8 - Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=14953478](https://commons.wikimedia.org/w/index.php?curid=14953478)
 
@@ -152,7 +153,7 @@ Kuva: By Swfung8 - Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/inde
 
 [https://en.wikipedia.org/wiki/Quicksort](https://en.wikipedia.org/wiki/Quicksort)
 	
-<a href="https://commons.wikimedia.org/wiki/File:Sorting_quicksort_anim.gif#/media/File:Sorting_quicksort_anim.gif" title="By en:User:RolandH, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1965827"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif" alt="Sorting quicksort anim.gif" style="max-width: 250px; max-height: 250px;"></a>
+<a href="https://commons.wikimedia.org/wiki/File:Sorting_quicksort_anim.gif#/media/File:Sorting_quicksort_anim.gif" title="By en:User:RolandH, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1965827"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif" alt="Sorting quicksort anim.gif" width="256" style="border solid silver 1px;"></a>
 
 Kuva: By en:User:RolandH, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=1965827](https://commons.wikimedia.org/w/index.php?curid=1965827)
 
@@ -170,7 +171,7 @@ Arvioi lopuksi tehtävää ratkaistessasi järjestämiseen kuluvaa aikaa. Miten 
 **Tämän harjoituksen tavoitteena on opetella itse toteuttamaan jokin tunnettu järjestämisalgoritmi, joten Pythonin valmiin lajittelualgoritmin käyttämistä ei arvioida.**
 
 
-## Ohjelman tuloste-esimerkki
+## Ohjelman esimerkkituloste
 
 Halutessasi voit tulostaa tapahtumat skriptissäsi esimerkiksi seuraavaalla tavalla:
 
@@ -213,6 +214,17 @@ Halutessasi voit tulostaa tapahtumat skriptissäsi esimerkiksi seuraavaalla tava
 
 Tapahtumien tulostaminen päivittäin ryhmiteltynä ei välttämättä vaadi erillistä tietorakennetta, vaan yksinkertainen tapahtumalista riittää. Vertaa vain aina tapahtuman päivämäärää edellisen päivämäärään, ja mikäli se on eri, tulosta uusi päivämäärän ennen tapahtuman kellonajan ja nimen tulostamista.
 
+
+## Testit
+
+Ohjelmasi toiminta testataan `test`-hakemistossa sijaitsevilla testeillä. Testit eivät suoraan kutsu ohjelmaasi, vaan ne tarkastavat ohjelmasi tulosteen tiedostosta.
+
+Mikäli haluat kokeilla testejä paikallisesti, ohjaa ohjelmasi tuloste ensin tiedostoon, ja sen jälkeen aja Pytest-testit:
+
+```
+$ python3 upcoming_events.py > student_output.txt
+$ pytest --verbose
+```
 
 ----
 

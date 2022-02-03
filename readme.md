@@ -115,13 +115,13 @@ Skriptisi ei saa pyytää käyttäjältä lainkaan syötteitä, ja sen tulee oll
 
 ## Osa 2: tapahtumien lajittelu (3 pistettä)
 
-Tässä osassa sinun tulee suodattamisen lisäksi **järjestää** tapahtumat niiden alkamisajan mukaan käyttäen itse toteuttamaasi **lajittelualgoritmia**.
+Tässä osassa sinun tulee suodattamisen lisäksi **järjestää** tapahtumat niiden alkamisajan mukaan käyttäen **itse toteuttamaasi lajittelualgoritmia**.
 
 > *"Some examples where you can find direct application of sorting techniques include: Sorting by price, popularity etc in e-commerce websites"*
 >
 > [The Ohio State University. 7 algorithms and data structures every programmer must know](https://u.osu.edu/cstutorials/2016/11/21/7-algorithms-and-data-structures-every-programmer-must-know/)
 
-**Koodisi tulee järjestellä kokonaisia tapahtumatietueita**, eli et saa poimia aineistosta järjesteltäväksi esimerkiksi pelkkiä nimiä ja alkamisaikoja.
+Koodisi tulee järjestellä kokonaisia tapahtumatietueita, eli älä poimi aineistosta järjesteltäväksi esimerkiksi pelkkiä nimiä ja alkamisaikoja.
 
 Voit valita toteutettavan järjestämisalgoritmin esimerkiksi seuraavista:
 
@@ -168,7 +168,7 @@ Arvioi lopuksi tehtävää ratkaistessasi järjestämiseen kuluvaa aikaa. Miten 
 
 **Huom!** Oikeassa ohjelmistoprojektissa käyttäisit Pythonin valmiita järjestämisfunktioita, joita esitellään esimerkiksi osoitteessa [https://docs.python.org/3/howto/sorting.html](https://docs.python.org/3/howto/sorting.html).
 
-**Tämän harjoituksen tavoitteena on opetella itse toteuttamaan jokin tunnettu järjestämisalgoritmi, joten Pythonin valmiin lajittelualgoritmin käyttämistä ei arvioida.**
+🚨 **Tämän harjoituksen tavoitteena on opetella itse toteuttamaan jokin tunnettu järjestämisalgoritmi, joten Pythonin valmiin lajittelualgoritmin käyttämistä ei arvioida.** 🚨
 
 
 ## Ohjelman esimerkkituloste

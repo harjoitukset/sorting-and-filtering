@@ -217,18 +217,39 @@ Tapahtumien tulostaminen päivittäin ryhmiteltynä ei välttämättä vaadi eri
 
 ## Testit
 
-Ohjelmasi toiminta testataan `test`-hakemistossa sijaitsevilla testeillä. Testit eivät suoraan kutsu ohjelmaasi, vaan ne tarkastavat ohjelmasi tulosteen tiedostosta.
+Ohjelmasi toiminta testataan GitHub classroomissa `.test`-piilohakemistossa sijaitsevilla testeillä. Testit eivät suorita ohjelmaasi, vaan ne tarkastavat ohjelmasi tulosteen tiedostosta nimeltä `student_output.txt`.
 
-Mikäli haluat kokeilla testejä paikallisesti, ohjaa ohjelmasi tuloste ensin tiedostoon, ja sen jälkeen aja Pytest-testit:
+Mikäli haluat kokeilla testejä paikallisesti, ohjaa ohjelmasi tuloste ensin tiedostoon `student_output.txt` ja sen jälkeen aja Pytest-testit seuraavasti:
 
 ```
+# Ohjataan tuloste tiedostoon
 $ python3 upcoming_events.py > student_output.txt
-$ pytest --verbose
+
+# Suoritetaan testit
+$ python3 -m pytest .test --verbose
+
+======================== test session starts ========================
+collected 3 items
+
+.test/test_filtering.py::test_output_contains_all_events_in_range 
+PASSED                                      [ 33%]
+
+.test/test_filtering.py::test_output_does_not_contain_events_beyond_30_days 
+PASSED                                      [ 66%]
+
+.test/test_sorting.py::test_events_are_in_chronological_order 
+PASSED                                      [100%]
+
+======================== 3 passed in 5.32s ========================
+
 ```
 
 ----
 
 # Lisenssit ja tekijänoikeudet
+
+Tämän oppimateriaalin on kehittänyt Teemu Havulinna ja se on lisensoitu [Creative Commons BY-NC-SA -lisenssillä](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
 
 ## MyHelsinki Open API
 

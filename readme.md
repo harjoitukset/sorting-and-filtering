@@ -123,6 +123,8 @@ Tässä osassa sinun tulee suodattamisen lisäksi **järjestää** tapahtumat ni
 
 Koodisi tulee järjestellä kokonaisia tapahtumatietueita, eli älä poimi aineistosta järjesteltäväksi esimerkiksi pelkkiä nimiä ja alkamisaikoja.
 
+🚨 **Tämän harjoituksen tavoitteena on opetella itse toteuttamaan jokin tunnettu järjestämisalgoritmi, joten Pythonin valmiin lajittelualgoritmin käyttämistä ei arvioida.** 🚨
+
 Voit valita toteutettavan järjestämisalgoritmin esimerkiksi seuraavista:
 
 **Lisäyslajittelu eli Insertion Sort**
@@ -167,8 +169,6 @@ Kun aineisto on järjestetty, tulosta tapahtumien nimet ja ajankohdat kronologis
 Arvioi lopuksi tehtävää ratkaistessasi järjestämiseen kuluvaa aikaa. Miten esimerkiksi aineiston koon kaksinkertaistaminen vaikuttaisi ohjelmasi suoritusaikaan? Kirjoita yhden virkkeen pituinen arvio suorituskyvystä koodin kommentteihin.
 
 **Huom!** Oikeassa ohjelmistoprojektissa käyttäisit Pythonin valmiita järjestämisfunktioita, joita esitellään esimerkiksi osoitteessa [https://docs.python.org/3/howto/sorting.html](https://docs.python.org/3/howto/sorting.html).
-
-🚨 **Tämän harjoituksen tavoitteena on opetella itse toteuttamaan jokin tunnettu järjestämisalgoritmi, joten Pythonin valmiin lajittelualgoritmin käyttämistä ei arvioida.** 🚨
 
 
 ## Ohjelman esimerkkituloste
@@ -215,7 +215,7 @@ Halutessasi voit tulostaa tapahtumat skriptissäsi esimerkiksi seuraavaalla tava
 Tapahtumien tulostaminen päivittäin ryhmiteltynä ei välttämättä vaadi erillistä tietorakennetta, vaan yksinkertainen tapahtumalista riittää. Vertaa vain aina tapahtuman päivämäärää edellisen päivämäärään, ja mikäli se on eri, tulosta uusi päivämäärän ennen tapahtuman kellonajan ja nimen tulostamista.
 
 
-## Testit
+## Testit (valinnainen)
 
 Ohjelmasi toiminta testataan GitHub classroomissa `.test`-piilohakemistossa sijaitsevilla testeillä. Testit eivät suorita ohjelmaasi, vaan ne tarkastavat ohjelmasi tulosteen tiedostosta nimeltä `student_output.txt`.
 
@@ -241,8 +241,9 @@ PASSED                                      [ 66%]
 PASSED                                      [100%]
 
 ======================== 3 passed in 5.32s ========================
-
 ```
+
+Testien suorittaminen edellyttää `pytest`-työkalun asennusta, jonka voit tarvittaessa asentaa komennolla `python3 -m pip install pytest`.
 
 ----
 

@@ -9,11 +9,14 @@ def test_events_are_in_chronological_order(student_answer: str):
     events = sort_chronologically(events)
 
     output_index = 0
-    for event in events:
+    for i, event in enumerate(events):
         name = get_name(event)
-        try:
-            # make sure that the name can be found after the previous event name, and update the index
-            output_index = student_answer.index(name, output_index + 1)
-        except ValueError:
+
+        # make sure that the name can be found after the previous event name, and update the index
+        output_index = student_answer.find(name, output_index + 1)
+
+        if output_index == -1:
+            prev = get_name(events[i-1]) if i >= 1 else '[start]'
+            next = get_name(events[i+1]) if i < len(events) - 1 else '[end]'
             raise Exception(
-                f'Event {name} was not found in the correct position!')
+                f'Event "{name}" was not found in the correct position between "{prev}" and "{next}"!')

@@ -1,4 +1,12 @@
-from helsinki_api import get_events, get_name, filter_events_by_days, student_answer, sort_chronologically
+from pathlib import Path
+from pytest import fixture
+from helsinki_api import (filter_events_by_days, get_events, get_name,
+                          sort_chronologically)
+
+
+@fixture
+def student_answer():
+    return (Path(__file__).parent.parent / 'student_output.txt').resolve().read_text(encoding='utf-8')
 
 
 def test_events_are_in_chronological_order(student_answer: str):
@@ -16,7 +24,8 @@ def test_events_are_in_chronological_order(student_answer: str):
         output_index = student_answer.find(name, output_index + 1)
 
         if output_index == -1:
-            prev = get_name(events[i-1]) if i >= 1 else '[start]'
-            next = get_name(events[i+1]) if i < len(events) - 1 else '[end]'
+            prev_name = get_name(events[i-1]) if i >= 1 else '[start]'
+            next_name = get_name(
+                events[i+1]) if i < len(events) - 1 else '[end]'
             raise Exception(
-                f'Event "{name}" was not found in the correct position between "{prev}" and "{next}"!')
+                f'Event "{name}" was not found in the correct position between "{prev_name}" and "{next_name}"!')

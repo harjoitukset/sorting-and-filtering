@@ -1,17 +1,9 @@
-from pytest import fixture
-import urllib.request
 import json
+import urllib.request
 from datetime import datetime, timedelta
-import os
 from functools import lru_cache
 
 EVENTS_API_URL = 'http://open-api.myhelsinki.fi/v1/events/'
-
-
-@fixture
-def student_answer():
-    with open(os.path.join(os.path.dirname(__file__), '../student_output.txt')) as f:
-        return f.read()
 
 
 @lru_cache

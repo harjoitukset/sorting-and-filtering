@@ -1,4 +1,12 @@
-from helsinki_api import get_events, get_name, filter_events_by_days, get_start_time, student_answer
+from pathlib import Path
+from pytest import fixture
+from helsinki_api import (filter_events_by_days, get_events, get_name,
+                          get_start_time)
+
+
+@fixture
+def student_answer():
+    return (Path(__file__).parent.parent / 'student_output.txt').resolve().read_text(encoding='utf-8')
 
 
 def test_output_contains_all_events_in_range(student_answer):

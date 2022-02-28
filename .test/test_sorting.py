@@ -1,7 +1,7 @@
 from pathlib import Path
 from pytest import fixture
 from helsinki_api import (filter_events_by_days, get_events, get_name,
-                          sort_chronologically)
+                          sort_chronologically, get_start_time)
 
 
 @fixture
@@ -17,7 +17,13 @@ def test_events_are_in_chronological_order(student_answer: str):
     events = sort_chronologically(events)
 
     output_index = 0
+    previous = events[0]
+
     for i, event in enumerate(events):
+        if get_start_time(previous) == get_start_time(event):
+            # Skip comparison, as events with equal start times can be in any order
+            continue
+
         name = get_name(event)
 
         # make sure that the name can be found after the previous event name, and update the index
@@ -29,3 +35,5 @@ def test_events_are_in_chronological_order(student_answer: str):
                 events[i+1]) if i < len(events) - 1 else '[end]'
             raise Exception(
                 f'Event "{name}" was not found in the correct position between "{prev_name}" and "{next_name}"!')
+
+        previous = event

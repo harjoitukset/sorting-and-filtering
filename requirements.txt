@@ -1,0 +1,5 @@
+# `pytest`-pakettia tarvitaan ohjelmasi testaamisessa:
+pytest
+
+# Jos käytät ratkaisussasi muita paketteja, kuten `requests`, lisää ne alle.
+# https://pip.pypa.io/en/stable/user_guide/#requirements-files
